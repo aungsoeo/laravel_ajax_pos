@@ -1,0 +1,84 @@
+1->user
+	- id:int(10)
+	- name:varchar(255)
+	- email:varchar(255)
+	- password:varchar(255)
+	- admin:tinyint(1) --- user admin/ sale_person
+	- remember_token: varchar(100)
+	- created_at:timestamp
+	- updated_at:timestamp
+
+2->categories
+	- id:int(10)
+	- name:varchar(255)
+	- description:varchar(255)
+	- created_at:timestamp
+	- updated_at:timestamp
+
+3->products
+	- id:int(10)
+	- name:varchar(255)
+	- product_code:varchar(255)
+	- price:double
+	- created_at:timestamp
+	- updated_at:timestamp
+
+4->invoice
+	- id:int(10)
+	- inv_no:varcahr(255)
+	- grand_total: 
+	- tax: integer
+	- discount: double 
+  	- sale_person_id
+	- created_at:timestamp
+	- updated_at:timestamp
+
+5->invoice_item
+	- id
+	- invoice_id
+	- product_id
+	- qty
+	- price
+	- discount
+	- created_at:timestamp
+	- updated_at:timestamp
+
+
+6-> customer
+	- id
+	- name
+	- email
+	- phone
+	- address
+	- created_at:timestamp
+	- updated_at:timestamp
+
+7->supplier
+	- id
+	- name
+	- email
+	- phone
+	- address
+	- created_at:timestamp
+	- updated_at:timestamp
+
+8->receiving
+	- id:int(10)
+	- inv_no:varcahr(255)
+	- grand_total: 
+	- tax: integer
+	- discount: double 
+  	- sale_person_id
+	- created_at:timestamp
+	- updated_at:timestamp
+
+
+9->receiving_item
+	- id
+	- invoice_id
+	- product_id
+	- qty
+	- price
+	- discount
+	- created_at:timestamp
+	- updated_at:timestamp
